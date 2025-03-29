@@ -9,7 +9,7 @@ IGNORE 1 ROWS
 SET
    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.'),
-   data = '2023-01-01';  -- Define a data como 01/01/2023 para todas as linhas, todas as datas estavam sendo cadastradas nulas.
+   data = '2023-01-01';  -- Define a data como 01/01/2023 para todas as linhas
 
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/2t2023.csv'
@@ -23,7 +23,8 @@ IGNORE 1 ROWS
 SET
    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.'),
-    data = '2023-04-01';
+   data = '2023-04-01';  
+
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/3T2023.csv'
 INTO TABLE demonstracoes_contabeis
@@ -36,7 +37,8 @@ IGNORE 1 ROWS
 SET
    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.'),
-    data = '2023-07-01';
+   data = '2023-07-01'; 
+
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/4T2023.csv'
 INTO TABLE demonstracoes_contabeis
@@ -49,7 +51,7 @@ IGNORE 1 ROWS
 SET
    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.'),
-    data = '2023-10-01';
+   data = '2023-10-01';  
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/1T2024.csv'
 INTO TABLE demonstracoes_contabeis
@@ -62,7 +64,8 @@ IGNORE 1 ROWS
 SET
    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.'),
-   data = '2024-01-01';
+   data = '2024-01-01';  
+
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/2T2024.csv'
 INTO TABLE demonstracoes_contabeis
@@ -75,7 +78,8 @@ IGNORE 1 ROWS
 SET
    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.'),
-   data = '2024-04-01';
+   data = '2024-04-01';  
+
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/3T2024.csv'
 INTO TABLE demonstracoes_contabeis
@@ -88,7 +92,8 @@ IGNORE 1 ROWS
 SET
    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.'),
-   data = '2024-07-01';
+   data = '2024-07-01'; 
+
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/4T2024.csv'
 INTO TABLE demonstracoes_contabeis
@@ -101,7 +106,8 @@ IGNORE 1 ROWS
 SET
    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.'),
-   data = '2024-10-01';
+   data = '2024-10-01';  
+
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Relatorio_cadop.csv'
 INTO TABLE operadoras

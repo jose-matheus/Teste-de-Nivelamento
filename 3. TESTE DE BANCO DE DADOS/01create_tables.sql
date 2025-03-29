@@ -29,5 +29,5 @@ CREATE TABLE demonstracoes_contabeis (
     descricao TEXT,
     vl_saldo_inicial DECIMAL(15, 2),
     vl_saldo_final DECIMAL(15, 2),
-    CONSTRAINT fk_reg_ans FOREIGN KEY (reg_ans) REFERENCES operadoras(reg_ans) ON DELETE CASCADE  -- Chave estrangeira
+    PRIMARY KEY (data, reg_ans, cd_conta_contabil)
 );
